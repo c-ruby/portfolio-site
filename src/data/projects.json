@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "adaptive-quiz",
+    "title": "First example project",
+    "summary": "Browser-based learning tool with adaptive questioning.",
+    "description": "Feature-rich app with spaced repetition, importers, and analytics.",
+    "tech": ["Next.js", "TypeScript", "Tailwind", "Node"],
+    "tags": ["web", "education"],
+    "youtubeId": "dQw4w9WgXcQ",
+    "repo": "https://github.com/you/adaptive-quiz",
+    "image": "/images/adaptive-quiz.png",
+    "date": "2025-06-01"
+  },
+
+  {
+    "slug": "second example",
+    "title": "Second example",
+    "summary": "Browser-based learning tool with adaptive questioning.",
+    "description": "Feature-rich app with spaced repetition, importers, and analytics.",
+    "tech": ["Next.js", "TypeScript", "Tailwind", "Node"],
+    "tags": ["web", "education"],
+    "youtubeId": "dQw4w9WgXcQ",
+    "repo": "https://github.com/you/adaptive-quiz",
+    "image": "/images/adaptive-quiz.png",
+    "date": "2025-06-01"
+  }
+]
