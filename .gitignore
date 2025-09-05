@@ -1,7 +1,7 @@
 # -----------------------
 # Dependencies
 # -----------------------
-/node_modules          # Installed Node.js packages
+/node_modules          
 /.pnp                  # Yarn Plug’n’Play cache
 .pnp.*                 # Yarn Plug’n’Play files
 .yarn/*                # Yarn v2/v3 internal dirs
