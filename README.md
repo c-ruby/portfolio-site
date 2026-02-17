@@ -1,40 +1,53 @@
-# portfolio-site
-Personal static site displaying my skills as a web developer, as well as demos for my prior works and some information about myself
+#Personal Developer Platform – Backend-Focused Portfolio
+A developer portfolio platform designed to showcase backend and systems programming skills while remaining demoable via a web interface. Originally built as a static portfolio site, it is being refactored into a backend-driven system where the frontend consumes data through an API.
 
+This project emphasizes real backend architecture, data modeling, client/server separation, and deployment on Linux, complementing my other backend projects while offering a location in which to demo my other projects.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+##Tech Stack
+- Frontend: Next.js (App Router), TypeScript, Tailwind CSS, Vercel deployment
+- (planned) Backend: Java, Spring Boot, AWS EC2
+- (planned) Database: MySQL 
+- Other: Git, Zod (runtime validation), 
+
+##Features
+####Frontend (Largely Implemented)
+- Modular Next.js frontend with reusable components: Navbar, ProjectCard, VideoEmbed, ThemeToggle
+- Type-safe data models using TypeScript interfaces and Zod schemas
+- Static project data currently served from projects.json
+- Dynamic routing for project detail pages
+- Responsive design with dark/light theme toggle
+- Basic accessibility and SEO in place
+####Backend (Planned)
+- Refactor frontend to fetch project data from backend API instead of static JSON
+- GET /projects endpoint serving ProjectDTO data (Planned)
+- Database persistence with MySQL/Postgres replacing static JSON (Planned)
+- Optional backend maturity features:
+- Admin-only authentication (Planned)
+- Role-based access control (Planned)
+- Content management without redeploy (Planned)
 
 ## Getting Started
+####Prerequisites:
+- Node.js LTS (>=20) and package manager (pnpm recommended)
+- GitHub account for repo hosting
+- Vercel account for frontend deployment
+- VS Code (recommended) with TypeScript support and extensions: ESLint, Prettier, Tailwind CSS IntelliSense
+####Install and Run
+1. Clone the Repo
+   ```git clone https://github.com/c-ruby/portfolio-site```
+2. Install dependancies
+   ```
+     pnpm install
+     pnpm dev
+   ```
+3. Deploy development server
+  ```
+    pnpm dev
+  ```
+  - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
-First, run the development server:
+* Currently will only bring up the static site. Backend API endpoints will replace static JSON once implemented, and further steps for setting up API will be added when available
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
